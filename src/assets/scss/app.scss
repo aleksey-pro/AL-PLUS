@@ -51,3 +51,7 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+@import "components/header.scss";
+@import "index.scss";
+@import "components/footer.scss";
