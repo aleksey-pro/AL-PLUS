@@ -45,29 +45,25 @@
       <img src="#" alt="alt">
     </div>
     <div class="large-6 cell main-advantagesList">
-      <ul>
-        <li>Рабочий кабинет</li>
-        <li>Продолжение современной кухни</li>
-        <li>Часть уютной спальни</li>
-        <li>Место для провождения времени с детьми</li>
-        <li>Функциональный гардероб</li>
+      <ul class="advantages-items">
+        {{#each data.advantages}}
+        <li lass="advantages-item">{{ this }}</li>
+        {{/each}}
       </ul>
     </div>
   </div>
   <div class="grid-x grid-margin-x main-extraService">
     <div class="large-12 cell main-extraServiceTitle">
-      <h2 class="text-center">Пересмотрите свой взгляд на использование балкона.</h2>
-      <h2 class="text-center">Компания Ал-Плюс предлагает увидеть новое:</h2>
+      <h2 class="text-center">Мы заботимся о вашем времени и спокойствии:</h2>
     </div>
     <div class="large-6 cell main-extraServiceImage">
       <img src="#" alt="alt">
     </div>
     <div class="large-6 cell main-extraServiceList">
-      <ul>
-        <li>Гарантия на все работы 365 дней.</li>
-        <li>Подписание договора осуществляется в любом удобном для Вас месте.</li>
-        <li>Выезд по гарантийным обязательствам осуществляется в течении десяти рабочих дней.</li>
-        <li>Все согласования рабочего проекта мы осуществялем за Вас совершенно бесплатно.</li>
+      <ul class="extraServices-items">
+        {{#each data.extraservices}}
+        <li class="extraServices-item">{{ this }}</li>
+        {{/each}}
       </ul>
     </div>
   </div>
