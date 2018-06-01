@@ -1,3 +1,19 @@
-.breakfast-items {
-  background-color: green;
+.header {
+  text-align: center;
+  .row {
+    height: rem-calc(150);
+  }
+}
+
+#header-nav {
+  justify-content: center;
+}
+
+.top-bar,
+.top-bar ul {
+  background: none;
+}
+
+.menu .menu-text {
+  padding: 0;
 }

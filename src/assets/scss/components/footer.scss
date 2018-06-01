@@ -1,13 +1,20 @@
-.footer-social,
-.footer-garantee {
+.footer-garantee,
+.footer-social {
   text-align: center;
 }
 
-.footer-contacts {
+.footer-garantee {
+  height: rem-calc(200);
+  border-bottom: 1px solid #bbb9b9;
+}
+
+.footer-social {
+  img {
+    width: 150px;
+  }
+}
+
+.footer-contacts-time,
+.footer-contacts-phone {
   text-align: right;
-}
-
-.footer-garantee {
-  height: rem-calc(50);
-  text-align: center;
 }

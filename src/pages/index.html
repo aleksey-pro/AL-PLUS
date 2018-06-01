@@ -1,50 +1,51 @@
 <div class="grid-container">
-  <div class="grid-x grid-margin-x">
-    <div class="large-12 cell main-heading">
+  <div class="row content-centered">
+    <div class="large-12 column main-heading">
       <h1 class="text-center">Замена холодного остекления </br>без изменения фасада</h1>
     </div>
     <!-- main-heading -->
-    <div class="large-12 cell main-sales">
+    <div class="large-12 column main-sales">
       <img src="#" alt="ал-плюс">
     </div>
     <!-- main-sales -->
-    <div class="large-12 cell main-calcBtn">
+    <div class="large-12 column main-calcBtn">
       <a class="button large primary" href='#'>Рассчитать стоимость</a>
     </div>
     <!-- main-calcBtn -->
   </div>
-  <div class="grid-x grid-margin-x main-roundMenu">
-    <div class="large-12 cell main-roundMenuHeading">
+  <!--row -->
+  <div class="row main-roundMenu content-centered">
+    <div class="large-12 column main-roundMenuHeading">
       <h1 class="subheader">АЛ-ПЛЮС - только качественный сервис!</h1>
     </div>
     <!-- main-subHeading -->
-    <div class="large-3 cell main-roundMenuItem">
+    <div class="large-3 column main-roundMenuItem">
       <img src="#" alt="alt">
       <a href="#" class="menu-title">Акции</a>
     </div>
-    <div class="large-3 cell main-roundMenuItem">
+    <div class="large-3 column main-roundMenuItem">
       <img src="#" alt="alt">
       <a href="#" class="menu-title">Дополнительные услуги</a>
     </div>
-    <div class="large-3 cell main-roundMenuItem">
+    <div class="large-3 column main-roundMenuItem">
       <img src="#" alt="alt">
       <a href="#" class="menu-title">Отделка и утепление</a>
     </div>
-    <div class="large-3 cell main-roundMenuItem">
+    <div class="large-3 column main-roundMenuItem">
       <img src="#" alt="alt">
       <a href="#" class="menu-title">Гарантия</a>
     </div>
   </div>
   <!-- main-roundMenu -->
-  <div class="grid-x grid-margin-x main-advantages">
-    <div class="large-12 cell main-advantagesTitle">
+  <div class="row main-advantages align-middle">
+    <div class="large-12 column main-advantagesTitle">
       <h2 class="text-center">Пересмотрите свой взгляд на использование балкона.</h2>
       <h2 class="text-center">Компания Ал-Плюс предлагает увидеть новое:</h2>
     </div>
-    <div class="large-6 cell main-advantagesImage">
+    <div class="large-6 column main-advantagesImage">
       <img src="#" alt="alt">
     </div>
-    <div class="large-6 cell main-advantagesList">
+    <div class="large-6 column main-advantagesList">
       <ul class="advantages-items">
         {{#each data.advantages}}
         <li lass="advantages-item">{{ this }}</li>
@@ -52,14 +53,14 @@
       </ul>
     </div>
   </div>
-  <div class="grid-x grid-margin-x main-extraService">
-    <div class="large-12 cell main-extraServiceTitle">
+  <div class="row main-extraService align-middle">
+    <div class="large-12 column main-extraServiceTitle">
       <h2 class="text-center">Мы заботимся о вашем времени и спокойствии:</h2>
     </div>
-    <div class="large-6 cell main-extraServiceImage">
+    <div class="large-6 column main-extraServiceImage">
       <img src="#" alt="alt">
     </div>
-    <div class="large-6 cell main-extraServiceList">
+    <div class="large-6 column main-extraServiceList">
       <ul class="extraServices-items">
         {{#each data.extraservices}}
         <li class="extraServices-item">{{ this }}</li>
