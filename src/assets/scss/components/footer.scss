@@ -1,11 +1,16 @@
+.footer {
+  .row {
+    margin-bottom: 0;
+  }
+}
+
 .footer-garantee,
 .footer-social {
   text-align: center;
 }
 
-.footer-garantee {
-  height: rem-calc(200);
-  border-bottom: 1px solid #bbb9b9;
+.footer-main {
+  border-top: 1px solid #bbb9b9;
 }
 
 .footer-social {

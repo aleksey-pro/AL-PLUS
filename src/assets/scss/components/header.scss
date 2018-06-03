@@ -2,11 +2,16 @@
   text-align: center;
   .row {
     height: rem-calc(150);
+    margin-bottom: 0;
+  }
+  .columns {
+    margin-bottom: 0;
   }
 }
 
 #header-nav {
   justify-content: center;
+  height: rem-calc(100);
 }
 
 .top-bar,
@@ -16,4 +21,9 @@
 
 .menu .menu-text {
   padding: 0;
+}
+
+.header-phone {
+  color: get-color(primary);
+  font-size: rem-calc(20);
 }

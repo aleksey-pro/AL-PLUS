@@ -54,8 +54,21 @@
 
 .grid-container {
   background-color: $white;
+  overflow-y: hidden;
+}
+
+.row {
+  margin-bottom: rem-calc(50);
+}
+
+.column {
+  margin-bottom: rem-calc(30);
 }
 
 @import "components/header.scss";
 @import "index.scss";
+@import "contatcs.scss";
+@import "akcii.scss";
+@import "remokon.scss";
+
 @import "components/footer.scss";

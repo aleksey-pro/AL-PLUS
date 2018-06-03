@@ -6,8 +6,17 @@
   display: block;
 }
 
-.advantages-items,
+.apllies-items,
 .extraServices-items {
   font-style: italic;
   font-size: 1.3rem;
+}
+
+.main-apllies {
+  border-bottom: 1px solid #bbb9b9;
+  border-top: 1px solid #bbb9b9;
+}
+
+.applies-header {
+  font-size: rem-calc(25);
 }
