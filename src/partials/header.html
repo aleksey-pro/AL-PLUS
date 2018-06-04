@@ -34,7 +34,7 @@
         <a href="gallery.html">Примеры работ</a>
       </li>
       <li class="menu-text">
-        <a href="otzyvy.html">Отзывы</a>
+        <a href="reviews.html">Отзывы</a>
       </li>
       <li class="menu-text">
         <a href="contacts.html">Контакты</a>
@@ -44,11 +44,25 @@
 </div>
 <!-- header -->
 <div class="reveal" id="back-call" data-reveal>
-  <h1>Awesome. I Have It.</h1>
-  <p class="lead">Your couch. It is mine.</p>
-  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
+  <form data-abide novalidate>
+    <div data-abide-error class="alert callout" style="display: none;">
+      <p>Внимательно заполните поля формы</p>
+    </div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <label>Ваше имя(*)
+          <input type="text" placeholder="Ваше имя" aria-describedby="exampleHelpText" required>
+          <span class="form-error">Поле обязательно для заполнения, только текст</span>
+        </label>
+        <label>Номер телефона для связи
+          <input type="text" placeholder="8-999-999-11-11" aria-describedby="exampleHelpText">
+          <span class="form-error">Только цифры и тире</span>
+        </label>
+      </div>
+      <fieldset class="large-12 cell content-centered">
+        <button class="button" type="submit" value="Submit">Перезвоните мне</button>
+      </fieldset>
+    </div>
+  </form>
 </div>
 <!-- modal -->

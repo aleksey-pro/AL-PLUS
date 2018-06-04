@@ -71,11 +71,127 @@
 </div>
 <!-- grid-container -->
 <div class="reveal" id="calculate-modal" data-reveal>
-  <h1>Awesome. I Have It.</h1>
-  <p class="lead">Your couch. It is mine.</p>
-  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
+
+  <form data-abide novalidate name="cl_form">
+    <legend class="text-center">Калькулятор</legend>
+    <div data-abide-error class="alert callout" style="display: none;">
+      <p>Внимательно заполните поля формы</p>
+    </div>
+    <div class="grid-x grid-padding-x content-centered">
+      <div class="large-12 cell">Переместите регулятор или введите данные вручную:</div>
+      <div class="large-12 cell">
+        <label for="stvorAmount">Число створок, шт.:</label>
+        <input type="number" id="stvorAmount" />
+        <span class="form-error">Поле обязательно для заполнения, только цифры</span>
+        <!-- <div id="slider-range-max3"></div> -->
+        <div class="cell large-12">
+          <div class="slider" id="slider1" data-slider data-start="0" data-end="10" data-step="1" data-position-value-function="log"
+            data-non-linear-base="5">
+            <span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="stvorAmount"></span>
+          </div>
+        </div>
+      </div>
+      <div class="large-12 cell">
+        <label for="lengthAmount">Длина, мм:</label>
+        <input type="number" id="lengthAmount" />
+        <span class="form-error">Поле обязательно для заполнения, только цифры</span>
+        <!-- <div id="slider-range-max"></div> -->
+        <div class="cell large-12">
+          <div class="slider" data-slider data-start="0" data-end="10000" data-step="10" data-position-value-function="log" data-non-linear-base="5">
+            <span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="lengthAmount"></span>
+          </div>
+        </div>
+      </div>
+      <div class="large-12 cell">
+        <label for="heightAmount">Высота, м:</label>
+        <input type="number" id="heightAmount" />
+        <!-- <div id="slider-range-max2"></div> -->
+        <div class="cell large-12">
+          <div class="slider" data-slider data-start="0" data-end="5000" data-step="10" data-position-value-function="log" data-non-linear-base="5">
+            <span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="heightAmount"></span>
+          </div>
+        </div>
+      </div>
+      <div class="large-12 cell">
+        <label for="netsAmount">Количество сеток:</label>
+        <input type="number" id="netsAmount" />
+        <!-- <div id="slider-range-max4"></div> -->
+        <div class="cell large-12">
+          <div class="slider" data-slider data-start="0" data-end="10" data-step="1" data-position-value-function="log" data-non-linear-base="5">
+            <span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="netsAmount"></span>
+          </div>
+        </div>
+      </div>
+      <div class="large-12 cell">
+        <p>
+          <span>Сумма:</span>
+          <span id="summ">0</span>
+          <span>руб.</span>
+        </p>
+      </div>
+      <div class="large-12 cell ">
+        <p>
+          <span>Площадь:</span>
+          <span id="square">0</span>
+          <span>м.кв.</span>
+        </p>
+      </div>
+    </div>
+    <!-- <fieldset class="calculator"> -->
+    <!-- <legend>Калькулятор</legend> -->
+    <!-- <p>Переместите регулятор или введите данные вручную:</p> -->
+
+    <!-- <label for="amount3">Число створок, шт.</label> -->
+    <!-- <input type="text" id="amount3" onchange="calc(this.value);"/> -->
+
+    <!-- <div id="slider-range-max3"></div> -->
+
+    <!-- <label for="amount">Длина, м:&nbsp;&nbsp;</label> -->
+    <!-- <input type="text" id="amount" onchange="calc(this.value);"/> -->
+
+    <!-- <div id="slider-range-max"></div> -->
+    <!-- > -->
+    <!-- <label for="amount2">Высота, м:</label> -->
+    <!-- <input type="text" id="amount2" onchange="calc(this.value);"/> -->
+
+    <!-- <div id="slider-range-max2"></div> -->
+
+    <!-- <label for="amount4">Количество сеток:</label> -->
+    <!-- <input type="text" id="amount4" onchange="calc(this.value);" /> -->
+
+    <!-- <div id="slider-range-max4"></div> -->
+    <!-- <center> -->
+    <!-- <table> -->
+    <!-- <tbody> -->
+    <!-- <tr> -->
+    <!-- <td><p style="color: #c9a564; font-size:18px;  "  >Сумма:</p></td> -->
+    <!-- <td><p style="color:#fff; font-size:20px;  " id="summ">0</p> </td> -->
+    <!-- <td><p style="color: #c9a564; font-size:18px;  "  >руб.</p>  </td> -->
+
+    <!-- </tr> -->
+
+
+    <!-- </tbody> -->
+    <!-- </table> -->
+    <!-- <hr> -->
+    <!-- <center> -->
+    <!-- <table> -->
+    <!-- <tbody> -->
+
+    <!-- <tr> -->
+    <!-- <td><p style="color: #c9a564; font-size:12px;  "  >Площадь :</p></td> -->
+    <!-- <td><p style="color: #fff; font-size:12px;  " id="square">0 </p> </td> -->
+    <!-- <td><p style="color: #c9a564; font-size:12px;  "  >м.кв.</p>  </td> -->
+    <!--  -->
+    <!-- </tr>		 -->
+    <!-- </tbody> -->
+    <!-- </table> -->
+    <!-- </center> -->
+    <!-- <div class="small">
+      <center>Точная стоимость заказа <br>рассчитывается при замере<br>					 *для домов ЛенСпецСМУ рассчетная высота <br>составляет 2,8м2
+      </center>
+      </div> -->
+    <!-- </fieldset> -->
+  </form>
 </div>
 <!-- modal -->
