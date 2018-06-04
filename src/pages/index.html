@@ -9,14 +9,14 @@
     </div>
     <!-- main-sales -->
     <div class="large-12 column main-calcBtn">
-      <a class="button large primary" href='#'>Рассчитать стоимость</a>
+      <button class="button large primary" data-open="calculate-modal">Рассчитать стоимость</button>
     </div>
     <!-- main-calcBtn -->
   </div>
   <!--row -->
   <div class="row main-roundMenu content-centered">
     <div class="large-12 column main-roundMenuHeading">
-      <h1 class="subheader">АЛ-ПЛЮС - только качественный сервис</h1>
+      <h2>АЛ-ПЛЮС - только качественный сервис</h2>
     </div>
     <!-- main-subHeading -->
     <div class="large-3 column main-roundMenuItem">
@@ -29,11 +29,11 @@
     </div>
     <div class="large-3 column main-roundMenuItem">
       <img src="{{root}}assets/img/circles3.png" alt="Отделка и утепление">
-      <a href="otdelka.html" class="menu-title">Отделка и утепление</a>
+      <a href="articles.html" class="menu-title">Полезная информация</a>
     </div>
     <div class="large-3 column main-roundMenuItem">
       <img src="{{root}}assets/img/garantee.png" alt="Гарантия">
-      <a href="control.html" class="menu-title">Контроль качества</a>
+      <a href="control.html" class="menu-title">Гарантия online</a>
     </div>
   </div>
   <!-- main-roundMenu -->
@@ -70,3 +70,12 @@
   </div>
 </div>
 <!-- grid-container -->
+<div class="reveal" id="calculate-modal" data-reveal>
+  <h1>Awesome. I Have It.</h1>
+  <p class="lead">Your couch. It is mine.</p>
+  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!-- modal -->

@@ -15,4 +15,63 @@
       <img src="{{root}}assets/img/control2.jpg#" alt="">
     </div>
   </div>
+  <div class="row align-center backform">
+    <div class="large-12 column backform-heading">
+      <h3 class="text-center">Уважаемые клиенты</h3>
+    </div>
+    <div class="large-2 column backform-logo">
+      <img src="{{root}}assets/img/garantee.png" alt="">
+    </div>
+    <div class="large-4 column backform-intro">
+      <p>Если у Вас возник гарантийный случай,предлагаем Вам воспользоваться формой подачи заявки онлайн - это значительно сэкономит
+        Ваше время. Заявка попадает напрямую в гарантийный отдел, минуя телефонные ожидания</p>
+    </div>
+  </div>
+  <div class="row align-center">
+    <div class="large-12 column backform-formTitle">
+      <h3 class="text-center">Гарантийный ремонт</h3>
+    </div>
+    <div class="large-8 column backform-form">
+      <form data-abide novalidate>
+        <div data-abide-error class="alert callout" style="display: none;">
+          <p>Внимательно заполните поля формы</p>
+        </div>
+        <div class="grid-x grid-padding-x">
+          <div class="large-12 cell">
+            <label>Ваше имя(*)
+              <input type="text" placeholder="Ваше имя" aria-describedby="exampleHelpText" required>
+              <span class="form-error">Поле обязательно для заполнения, только текст</span>
+            </label>
+            <label>Причина обращения
+              <textarea type="text" placeholder="" aria-describedby="exampleHelpText"></textarea>
+              <span class="form-error">Только текст</span>
+            </label>
+            <label>Номер договора(*)
+              <input type="number" placeholder="123456" aria-describedby="exampleHelpText" required pattern="number">
+              <span class="form-error">Поле обязательно для заполнения, только цифры</span>
+            </label>
+            <label>E-mail
+              <input type="email" placeholder="email@email.com" aria-describedby="exampleHelpText" pattern="email">
+              <span class="form-error">Неправильный формат почтового адреса</span>
+            </label>
+            <label>Номер телефона для связи
+              <input type="text" placeholder="8-999-999-11-11" aria-describedby="exampleHelpText">
+              <span class="form-error">Только цифры и тире</span>
+            </label>
+            <label>Удобная дата гарантийного ремонта
+              <input type="date" placeholder="" aria-describedby="exampleHelpText" pattern="date">
+              <span class="form-error">Неправильный формат времени</span>
+            </label>
+            <label>Фотографии с проблемой (*.jpg, *.png)
+              <input type="file" placeholder="" multiple aria-describedby="exampleHelpText">
+              <span class="form-error">Неправильный формат файла</span>
+            </label>
+          </div>
+          <fieldset class="large-6 cell">
+            <button class="button" type="submit" value="Submit">Выслать заявку</button>
+          </fieldset>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>

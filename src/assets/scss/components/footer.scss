@@ -9,8 +9,10 @@
   text-align: center;
 }
 
-.footer-main {
-  border-top: 1px solid #bbb9b9;
+.footer-main,
+.footer-garantee {
+  border-top: 1px solid $medium-gray;
+  padding-top: rem-calc(30);
 }
 
 .footer-social {
@@ -19,6 +21,12 @@
   }
 }
 
+.footer-contacts-time,
+.footer-contacts-phone,
+.footer-copy {
+  font-size: 1.2rem;
+  color: get-color(primary);
+}
 .footer-contacts-time,
 .footer-contacts-phone {
   text-align: right;
