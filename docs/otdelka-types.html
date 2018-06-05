@@ -1,0 +1,453 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АЛ-ПЛЮС</title>
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+  <div class="grid-container header">
+  <div class="row align-middle">
+    <div class="columns large-3 header-backcall">
+      <button class="button medium primary" data-open="back-call">Обратный звонок</button>
+    </div>
+    <div class="columns large-6 header-logo">
+      <a href="index.html">
+        <img src="assets/img/new_logo.gif" alt="logo" />
+      </a>
+    </div>
+    <div class="columns large-3 header-phone">+7 (921) 958-38-78</div>
+  </div>
+
+  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="header-nav"></button>
+    <div class="title-bar-title">Меню</div>
+  </div>
+
+  <div class="top-bar" id="header-nav">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">
+        <a href="index.html">Замена остекления</a>
+      </li>
+      <li class="menu-text">
+        <a href="otdelka.html">Отделка и утепление</a>
+      </li>
+      <li class="menu-text">
+        <a href="tonirovka.html">Тонировка</a>
+      </li>
+      <li class="menu-text">
+        <a href="remokon.html">Ремонт окон</a>
+      </li>
+      <li class="menu-text">
+        <a href="gallery.html">Примеры работ</a>
+      </li>
+      <li class="menu-text">
+        <a href="reviews.html">Отзывы</a>
+      </li>
+      <li class="menu-text">
+        <a href="contacts.html">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- header -->
+<div class="reveal" id="back-call" data-reveal>
+  <form data-abide novalidate>
+    <div data-abide-error class="alert callout" style="display: none;">
+      <p>Внимательно заполните поля формы</p>
+    </div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <label>Ваше имя(*)
+          <input type="text" placeholder="Ваше имя" aria-describedby="exampleHelpText" required>
+          <span class="form-error">Поле обязательно для заполнения, только текст</span>
+        </label>
+        <label>Номер телефона для связи
+          <input type="text" placeholder="8-999-999-11-11" aria-describedby="exampleHelpText">
+          <span class="form-error">Только цифры и тире</span>
+        </label>
+      </div>
+      <fieldset class="large-12 cell content-centered">
+        <button class="button" type="submit" value="Submit">Перезвоните мне</button>
+      </fieldset>
+    </div>
+  </form>
+</div>
+<!-- modal -->
+ <div class="grid-container">
+  <div class="row">
+    <div class="large-12 column otdTypes-heading">
+      <h1 class="text-center">Выберите желаемый тип отделки и утепления</h1>
+    </div>
+    <div class="large-12 column otdTypes-tabs">
+      <ul class="tabs" data-tabs id="otdelka-tabs">
+        <li class="tabs-title is-active ">
+          <img src="assets/img/remont/eco1.jpg" alt="">
+          <a href="#panel1" aria-selected="true">Утепление + Отделка Стандарт</a>
+        </li>
+        <li class="tabs-title">
+          <img src="assets/img/remont/class1.jpg" alt="">
+          <a data-tabs-target="panel2" href="#panel2">Утепление + Отделка Комфорт</a>
+        </li>
+        <li class="tabs-title">
+          <img src="assets/img/remont/comf2.jpg" alt="">
+          <a data-tabs-target="panel3" href="#panel2">Утепление Плюс + Отделка Комфорт</a>
+        </li>
+        <li class="tabs-title">
+          <img src="assets/img/remont/lux3.jpg" alt="">
+          <a data-tabs-target="panel4" href="#panel2">Люкс</a>
+        </li>
+      </ul>
+      <div class="tabs-content" data-tabs-content="otdelka-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+          <h3 class="text-center otdType-title">Утепление + Отделка Стандрат</h3>
+          <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
+              <ul class="otdType-list">
+                <li class="otdType-item">Утепление стен, пола, потолка пенополистиролом и герметизация</li>
+                <li class="otdType-item">Укладка ламината на пол</li>
+                <li class="otdType-item">Отделка стен гипсокартоном и окраска</li>
+                <li class="otdType-item">Отделка потолка ПВХ-панелями</li>
+              </ul>
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/penoplex.jpg" alt="">
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/class1.jpg" alt="">
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/class3.jpg" alt="">
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/class4.jpg" alt="">
+            </div>
+          </div>
+          <h3 class="text-center otdType-title">Ориентировочная стоимость для некоторых типовых балконов (ЛенСпецСМУ)</h3>
+          <div class="grid-x grid-padding-x otdType-types">
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type1.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 25 м.кв.</li>
+                <li>Стоимость "под ключ"- 64900 руб.</li>
+                <li>Стоимость 1 кв.м. - 2596 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type2.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 21 м.кв.</li>
+                <li>Стоимость "под ключ"- 60900 руб.</li>
+                <li>Стоимость 1 кв.м. - 2900 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type3.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 17,5 м.кв.</li>
+                <li>Стоимость "под ключ"- 57900 руб.</li>
+                <li>Стоимость 1 кв.м. - 3300 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type4.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 17 м.кв.</li>
+                <li>Стоимость "под ключ"- 57900 руб.</li>
+                <li>Стоимость 1 кв.м. - 3400 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type5.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 19 м.кв.</li>
+                <li>Стоимость "под ключ"- 58900 руб.</li>
+                <li>Стоимость 1 кв.м. - 3100 руб.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-panel" id="panel2">
+          <h3 class="text-center otdType-title">Утепление + Отделка Комфорт</h3>
+          <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
+              <ul class="otdType-list">
+                <li class="otdType-item">Утепление стен, пола, потолка пенополистиролом и герметизация</li>
+                <li class="otdType-item">Укладка керамогранита на пол</li>
+                <li class="otdType-item">Отделка стен и потолка гипсокартоном и окраска</li>
+                <li class="otdType-item">Отделка потолка ПВХ-панелями</li>
+              </ul>
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/penoplex.jpg" alt="">
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/class4.jpg" alt="">
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/comf2.jpg" alt="">
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/eco2.jpg" alt="">
+            </div>
+          </div>
+          <h3 class="text-center otdType-title">Ориентировочная стоимость для некоторых типовых балконов (ЛенСпецСМУ)</h3>
+          <div class="grid-x grid-padding-x otdType-types">
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type1.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 25 м.кв.</li>
+                <li>Стоимость "под ключ"- 69900 руб.</li>
+                <li>Стоимость 1 кв.м. - 2796 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type2.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 21 м.кв.</li>
+                <li>Стоимость "под ключ"- 64900 руб.</li>
+                <li>Стоимость 1 кв.м. - 3090 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type3.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 17,5 м.кв.</li>
+                <li>Стоимость "под ключ"- 60900 руб.</li>
+                <li>Стоимость 1 кв.м. - 3480 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type4.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 17 м.кв.</li>
+                <li>Стоимость "под ключ"- 61900 руб.</li>
+                <li>Стоимость 1 кв.м. - 3640 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type5.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 19 м.кв.</li>
+                <li>Стоимость "под ключ"- 61900 руб.</li>
+                <li>Стоимость 1 кв.м. - 3250 руб.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-panel" id="panel3">
+          <h3 class="text-center otdType-title">Утепление Плюс + Отделка Комфорт</h3>
+          <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
+              <ul class="otdType-list">
+                <li class="otdType-item">Утепление стен, пола, потолка утолщенным пенополистиролом и герметизация</li>
+                <li class="otdType-item">Гидроизоляция стен и потолка</li>
+                <li class="otdType-item">Установка и укладка теплого пола Energy</li>
+                <li class="otdType-item">Укладка керамогранита на пол</li>
+                <li>Отделка стен и потолка гипсокартоном и окраска</li>
+              </ul>
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/penoplex.jpg" alt="">
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/class1.jpg" alt="">
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/class3.jpg" alt="">
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/eco3.jpg" alt="">
+            </div>
+          </div>
+          <h3 class="text-center otdType-title">Ориентировочная стоимость для некоторых типовых балконов (ЛенСпецСМУ)</h3>
+          <div class="grid-x grid-padding-x otdType-types">
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type1.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 25 м.кв.</li>
+                <li>Стоимость "под ключ"- 81900 руб.</li>
+                <li>Стоимость 1 кв.м. - 3276 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type2.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 21 м.кв.</li>
+                <li>Стоимость "под ключ"- 79000 руб.</li>
+                <li>Стоимость 1 кв.м. - 3800 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type3.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 17,5 м.кв.</li>
+                <li>Стоимость "под ключ"- 76900 руб.</li>
+                <li>Стоимость 1 кв.м. - 4394 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type4.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 17 м.кв.</li>
+                <li>Стоимость "под ключ"- 76900 руб.</li>
+                <li>Стоимость 1 кв.м. - 4520 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type5.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 19 м.кв.</li>
+                <li>Стоимость "под ключ"- 76900 руб.</li>
+                <li>Стоимость 1 кв.м. - 4040 руб.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-panel" id="panel4">
+          <h3 class="text-center otdType-title">Утепление Плюс + Отделка Люкс</h3>
+          <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
+              <ul class="otdType-list">
+                <li class="otdType-item">Утепление стен, пола, потолка утолщенным пенополистиролом и герметизация</li>
+                <li class="otdType-item">Гидроизоляция стен и потолка</li>
+                <li class="otdType-item">Установка и укладка теплого пола Energy</li>
+                <li class="otdType-item">Укладка керамогранита на пол</li>
+                <li>Отделка стен и потолка гипсокартоном</li>
+                <li>Окраска стен декоративной дизанерской краской</li>
+                <li>Монтаж натяжного потолка</li>
+              </ul>
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/penoplex.jpg" alt="">
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/lux1.jpg" alt="">
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/lux2.jpg" alt="">
+            </div>
+            <div class="large-3 cell">
+              <img src="assets/img/remont/lux3.jpg" alt="">
+            </div>
+          </div>
+          <h3 class="text-center otdType-title">Ориентировочная стоимость для некоторых типовых балконов (ЛенСпецСМУ)</h3>
+          <div class="grid-x grid-padding-x otdType-types">
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type1.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 25 м.кв.</li>
+                <li>Стоимость "под ключ"- 99900 руб.</li>
+                <li>Стоимость 1 кв.м. - 3996 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type2.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 21 м.кв.</li>
+                <li>Стоимость "под ключ"- 99900 руб.</li>
+                <li>Стоимость 1 кв.м. - 4750 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type3.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 17,5 м.кв.</li>
+                <li>Стоимость "под ключ"- 98900 руб.</li>
+                <li>Стоимость 1 кв.м. - 5650 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type4.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 17 м.кв.</li>
+                <li>Стоимость "под ключ"- 98900 руб.</li>
+                <li>Стоимость 1 кв.м. - 5800 руб.</li>
+              </ul>
+            </div>
+            <div class="large-5 cell">
+              <img src="assets/img/remont/Type5.png" alt="">
+            </div>
+            <div class="large-7 cell">
+              <ul>
+                <li>Рабочая площадь - 19 м.кв.</li>
+                <li>Стоимость "под ключ"- 99900 руб.</li>
+                <li>Стоимость 1 кв.м. - 5250 руб.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="grid-container footer">
+  <div class="row align-middle footer-main">
+    <div class="large-3 columns footer-copy">&copy; 2013—2018</br> Компания Ал-Плюс</div>
+    <div class="large-3 columns">
+      <a href="control.html">
+        <img src="assets/img/garantee-sm.png" alt="гарантия"> Гарантия on-line
+      </a>
+    </div>
+    <div class="large-3 columns footer-social">
+      <a href='http://vk.com/al_pluss' target="_blank">
+        <img src="assets/img/vk.jpg" alt="">
+      </a>
+    </div>
+    <div class="large-3 columns">
+      <div class="footer-contacts-phone">+7 (921) 958-38-78</div>
+      <div class="footer-contacts-time">пн-пт с 10:00 до 21:00 </div>
+    </div>
+  </div>
+  <!-- footer -->
+</div>
+
+
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

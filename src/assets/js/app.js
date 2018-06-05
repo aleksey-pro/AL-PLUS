@@ -50,6 +50,7 @@ let getSumm = () => {
 /**
  * Обработчик для инпутов
  */
+let cl_form = document.querySelector("form");
 let inputs = cl_form.querySelectorAll("input");
 [].forEach.call(inputs, input => {
   input.addEventListener("change", function(e) {

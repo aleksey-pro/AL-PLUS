@@ -2,5 +2,5 @@
 node_modules
 npm-debug.log
 bower_components
-dist
+src/assets/img
 *.swp
