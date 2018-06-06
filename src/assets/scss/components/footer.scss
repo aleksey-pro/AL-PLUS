@@ -9,10 +9,18 @@
   text-align: center;
 }
 
-.footer-main,
-.footer-garantee {
+.footer-main {
   border-top: 1px solid $medium-gray;
   padding-top: rem-calc(30);
+}
+
+.footer-garantee {
+  img {
+    float: left;
+  }
+  p {
+    margin-top: 1rem;
+  }
 }
 
 .footer-social {
