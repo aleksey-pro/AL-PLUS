@@ -22,26 +22,39 @@ let getSquare = () => {
   let lengthVal = document.cl_form.lengthAmount.value;
   let heightVal = document.cl_form.heightAmount.value;
   if (lengthVal > 0 && heightVal > 0) {
-    let res = (lengthVal * heightVal / 1000000).toFixed(2);
+    let res = ((lengthVal * heightVal) / 1000000).toFixed(2);
     document.getElementById("square").innerHTML = res;
     return res;
   }
 };
 
 /**
- * Функция расчета стоимости
+ *  Функция расчета стоимости с учетом створок и сеток
  */
-let getSumm = () => {
-  let stvorkiVal = document.cl_form.stvorAmount.value;
-  let netsVal = document.cl_form.netsAmount.value;
+// let getSumm = () => {
+//   let stvorkiVal = document.cl_form.stvorAmount.value;
+//   let netsVal = document.cl_form.netsAmount.value;
 
-  if (stvorkiVal > 0 && netsVal > 0) {
-    let summ =
-      30000 +
-      15000 +
-      (2200 + 1500 + 780) * getSquare() +
-      11000 * stvorkiVal +
-      2500 * netsVal;
+//   if (stvorkiVal > 0 && netsVal > 0) {
+//     let summ =
+//       30000 +
+//       15000 +
+//       (2200 + 1500 + 780) * getSquare() +
+//       11000 * stvorkiVal +
+//       2500 * netsVal;
+//     document.getElementById("summ").innerHTML = summ.toFixed(1);
+//   }
+//   return false;
+// };
+
+/**
+ * Упрощенная Функция расчета стоимости
+ */
+
+let getSumm = () => {
+  let square = getSquare();
+  if (square) {
+    let summ = 8700 * square;
     document.getElementById("summ").innerHTML = summ.toFixed(1);
   }
   return false;
